@@ -86,10 +86,10 @@ La base de datos está configurada para leer las imágenes de los productos desd
 Para que las imágenes se muestren correctamente:
 
 1. Vaya a la raíz de su disco `C:`.
-2. Cree una carpeta llamada **`fotos_gorras`**.
+2. Cree una carpeta llamada **`FOTOS_GORRAS`**.
 3. La ruta exacta debe ser:  
    ```
-   C:\fotos_gorras
+   C:\FOTOS_GORRAS
    ```
 4. Coloque dentro todas las imágenes de los productos (por ejemplo: `4.jpg`, `5.jpg`, `6.jpg`, ...).
 
