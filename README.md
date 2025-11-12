@@ -19,6 +19,5 @@ Siga estos pasos en orden para configurar y ejecutar el proyecto localmente.
 ### 1. Clonar el Repositorio
 
 ```bash
-[git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
-](https://github.com/LautaAp23/Proyecto-eccomerce-lenguajes-3-y-4.git)
+git clone https://github.com/LautaAp23/Proyecto-eccomerce-lenguajes-3-y-4.git
+cd Proyecto-eccomerce-lenguaje-3-y-4
