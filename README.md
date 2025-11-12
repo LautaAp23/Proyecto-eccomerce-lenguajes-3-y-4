@@ -124,12 +124,6 @@ Una vez completados todos los pasos de configuración:
 
 ---
 
-## 📸 Capturas (opcional)
-
-> *(Puede agregar aquí imágenes de la interfaz de la tienda y del dashboard de administración.)*
-
----
-
 ## 🧑‍💻 Autor
 
 **Desarrollado por:** *Lautaro Aponte*  
