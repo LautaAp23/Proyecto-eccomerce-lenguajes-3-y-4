@@ -33,7 +33,7 @@ cd Proyecto-eccomerce-lenguajes-3-y-4
 ### 2️⃣ Configuración de la Base de Datos
 
 1. **Restaurar la Base de Datos:**
-   - Busque el archivo `bdd-new-era.sql` en la raíz del proyecto.
+   - Busque el archivo `bdd-new-era-limpio.sql` en la raíz del proyecto.
    - Ejecute el script completo en su instancia de **SQL Server** (puede usar *SQL Server Management Studio* o una herramienta similar).
    - Esto creará la base de datos **`newera`** con todas las tablas, procedimientos almacenados y datos de ejemplo.
 
