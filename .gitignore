@@ -1,0 +1,11 @@
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+/bin/
+/obj/
+
+# Archivos sensibles
+Web.config
+Paypal.txt
+secrets.config

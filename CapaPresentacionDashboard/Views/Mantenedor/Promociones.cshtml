@@ -1,0 +1,731 @@
+﻿
+@{
+    ViewBag.Title = "Promociones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Mantenimiento</a></li>
+    <li class="breadcrumb-item active">Promociones</li>
+</ol>
+
+<div class="card m-lg-4">
+    <div class="card-header">
+        <i class="fas fa-boxes me-1"></i>Lista de Cupones
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" onclick="abrirModal(null)">Crear Nuevo</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <table id="tabla" class="display cell-border" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Codigo de cupon</th>
+                    <th>Tipo de descuento</th>
+                    <th>Porcentaje de descuento</th>
+                    <th>Monto de descuento</th>
+                    <th>Cantidad</th>
+                    <th>Fecha vencimiento</th>
+                    <th>Activo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="FormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Cupon</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+
+                <input id="txtid" type="hidden" value="0" />
+
+                <form id="contenedor" class="row">
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label class="form-label">Codigo de cupon</label>
+                            <input type="text" class="form-control" id="txtcodigo" name="codigocupon" autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label class="form-label">Tipo de descuento</label>
+                            <select id="cbotipo" class="form-select">
+                                <option value="PORCENTAJE">PORCENTAJE</option>
+                                <option value="MONTO">MONTO</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Porcentaje de descuento</label>
+                            <input type="number" class="form-control" id="txtporcentaje" name="porcentaje" autocomplete="off"/>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Monto de descuento</label>
+                            <input type="number" class="form-control" id="txtmonto" name="Monto" autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="txtcantidad" name="cantidadme" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Fecha de vencimiento</label>
+                            <input type="date" class="form-control" id="txtfechaven" name="fechaven" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Activo</label>
+                            <select id="cboactivo" class="form-select">
+                                <option value="1">Si</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                <!--Alerta-->
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div id="mensajeError" class="alert alert-danger" role="alert">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary" onclick="Guardar()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card m-lg-4">
+    <div class="card-header">
+        <i class="fas fa-certificate"></i>Promociones por categoria
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-success" onclick="abrirModal2(null)">Crear Nuevo</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <table id="tabla2" class="display cell-border" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Silueta</th>
+                    <th>Porcentaje de descuento</th>
+                    <th>Fecha vencimiento</th>
+                    <th>Activo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="FormModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel2">Promocion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+
+                <input id="txtid2" type="hidden" value="0" />
+
+                <form id="contenedor2" class="row">
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label class="form-label">Silueta</label>
+                            <select id="cbosilueta2" class="form-select">
+                                <option value="59FIFTY">59FIFTY</option>
+                                <option value="9FIFTY">9FIFTY</option>
+                                <option value="39THIRTY">39THIRTY</option>
+                                <option value="9FORTY">9FORTY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label class="form-label">Porcentaje de descuento</label>
+                            <input type="number" class="form-control" id="txtporcentaje2" name="porcentaje" autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="mb-3">
+                            <label class="form-label">Fecha de vencimiento</label>
+                            <input type="date" class="form-control" id="txtfechaven2" name="fechaven" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Activo</label>
+                            <select id="cboactivo2" class="form-select">
+                                <option value="1">Si</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+
+
+                <!--Alerta-->
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div id="mensajeError2" class="alert alert-danger" role="alert">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary" onclick="Guardar2()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+
+        var tabladata;
+        var filaSeleccionada;
+
+
+        tabladata = $("#tabla").DataTable({
+            responsive: true,
+            ordering: true,
+            "ajax": {
+                url: '@Url.Action("ListarCupones", "Mantenedor")',
+                type: "GET",
+                datatype: "json"
+            },
+            "columns": [
+                { "data": "Codigo_cupon" },
+                { "data": "TipoDescuento" },
+                { "data": "Porcentaje_desc_cup" },
+                { "data": "Monto_desc_cup" },
+                { "data": "Cantidad_cup" },
+                {
+                    "data": "Fecha_Vencimiento",
+                    "render": function (data) {
+                        var fecha = new Date(parseInt(data.substr(6)));
+                        return fecha.toLocaleDateString("es-AR");
+                    }
+                },
+                {
+                    "data": "Activo", "render": function (valor) {
+                        if (valor) {
+                            return '<span class="badge bg-success">Si</span>'
+                        } else {
+                            return '<span class="badge bg-danger">No</span>'
+                        }
+                    }
+                },
+                {
+                    "defaultContent": '<button type="button" class="btn btn-primary btn-sm btn-editar"><i class="fas fa-pen"></i></button>' +
+                        '<button type="button" class="btn btn-danger btn-sm ms-2 btn-eliminar"><i class="fas fa-trash"></i></button>',
+                    "orderable": false,
+                    "searchable": false,
+                    "width":"90px"
+                }
+            ],
+            "language": {
+                url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-ES.json',
+            }
+        });
+
+
+        $.validator.addMethod("fechaValida", function (value, element) {
+            return /^\d{4}-\d{2}-\d{2}$/.test(value);
+        }, "Debe ingresar una fecha válida en formato YYYY-MM-DD");
+
+
+
+        $("#contenedor").validate({
+            rules: {
+                codigocupon: {
+                    required: true
+                },
+                porcentaje: {
+                    required: true,
+                    number: true
+                },
+                Monto: {
+                    required: true,
+                    number: true
+                },
+                cantidadme: {
+                    required: true,
+                    number: true
+                },
+                fechaven: {
+                    required: true,
+                    fechaValida: true
+                }
+            },
+            messages: {
+                codigocupon: "- El campo código del cupón es obligatorio",
+                porcentaje: {
+                    required: "- El campo porcentaje es obligatorio",
+                    number: "- Ingrese un valor numérico válido"
+                },
+                Monto: {
+                    required: "- El campo monto es obligatorio",
+                    number: "- Ingrese un valor numérico válido"
+                },
+                cantidadme: {
+                    required: "- El campo cantidad es obligatorio",
+                    number: "- Ingrese un número válido"
+                },
+                fechaven: {
+                    required: "- La fecha de vencimiento es obligatoria",
+                    fechaValida: "- Ingrese una fecha válida (YYYY-MM-DD)"
+                }
+            },
+            errorElement: "div",
+            errorLabelContainer: ".alert-danger"
+        });
+
+
+
+
+        function abrirModal(json) {
+
+            $("#txtid").val(0);
+            $("#txtcodigo").val("");
+            $("#cbotipo").val($("#cbotipo option:first").val());
+            $("#txtporcentaje").val("");
+            $("#txtmonto").val("");
+            $("#txtcantidad").val("");
+            $("#cboactivo").val(1);
+            $("#txtfechaven").val("");
+            $("#mensajeError").hide();
+
+
+
+            if (json != null) {
+                $("#txtid").val(json.IdCupones);
+                $("#txtcodigo").val(json.Codigo_cupon);
+                $("#cbotipo").val(json.TipoDescuento);
+                $("#txtporcentaje").val(json.Porcentaje_desc_cup);
+                $("#txtmonto").val(json.Monto_desc_cup);
+                $("#txtcantidad").val(json.Cantidad_cup);
+                if (json.Fecha_Vencimiento) {
+                    let timestamp = parseInt(json.Fecha_Vencimiento.substr(6)); // extrae número de /Date(...)
+                    let fecha = new Date(timestamp);
+
+                    let yyyy = fecha.getFullYear();
+                    let mm = ("0" + (fecha.getMonth() + 1)).slice(-2); // Mes empieza en 0
+                    let dd = ("0" + fecha.getDate()).slice(-2);
+
+                    let fechaFormateada = `${yyyy}-${mm}-${dd}`; // formato YYYY-MM-DD
+
+                    $("#txtfechaven").val(fechaFormateada);
+                }
+                $("#cboactivo").val(json.Activo == true ? 1 : 0);
+            }
+
+            $("#FormModal").modal("show");
+        }
+
+        $("#tabla tbody").on("click", ".btn-editar", function () {
+
+            filaSeleccionada = $(this).closest("tr");
+
+            var data = tabladata.row(filaSeleccionada).data();
+
+            abrirModal(data)
+        })
+
+        $("#tabla tbody").on("click", ".btn-eliminar", function () {
+
+            var cuponseleccionado = $(this).closest("tr");
+
+            var data = tabladata.row(cuponseleccionado).data();
+
+            swal({
+                title: "Esta Seguro?",
+                text: "¿Desea eliminar el cupon?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-primary",
+                confirmButtonText: "Si",
+                cancelButtonText: "No",
+                closeOnConfirm: true
+            },
+                function () {
+
+                    jQuery.ajax({
+                        url: '@Url.Action("EliminarCupon", "Mantenedor")',
+                        type: "POST",
+                        data: JSON.stringify({ id: data.IdCupones }),
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            if (data.resultado) {
+                                tabladata.row(cuponseleccionado).remove().draw();
+                            } else {
+                                swal("No se pudo eliminar", data.mensaje, "error")
+                            }
+                        },
+                        error: function (error) {
+                            console.log(error)
+                        }
+                    });
+            });
+        })
+
+        function Guardar() {
+
+            if (!$("#txtfechaven").val()) {
+                const hoy = new Date();
+                hoy.setDate(hoy.getDate() - 1); 
+
+                const ayer = hoy.toISOString().split('T')[0]; 
+
+                $("#txtfechaven").val(ayer);
+            }
+
+
+
+            if (!$("#txtcantidad").val()) {
+                $("#txtcantidad").val(0);
+            }
+            var Cupones = {
+
+                IdCupones: $("#txtid").val(),
+                Codigo_cupon: $("#txtcodigo").val(),
+                TipoDescuento: $("#cbotipo").val(),
+                Porcentaje_desc_cup: $("#txtporcentaje").val() || 0,
+                Monto_desc_cup: $("#txtmonto").val() || 0,
+                Cantidad_cup: $("#txtcantidad").val(),
+                Fecha_Vencimiento: $("#txtfechaven").val(),
+                Activo: $("#cboactivo").val() == 1 ? true : false,
+
+            }
+
+
+            var request = new FormData();
+            request.append("objeto", JSON.stringify(Cupones))
+
+            jQuery.ajax({
+                url: '@Url.Action("GuardarCupon","Mantenedor")',
+                type: "POST",
+                data: request,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+
+                    $(".modal-body").LoadingOverlay("hide");
+                    // PRODUCTO NUEVO
+                    if (Cupones.IdCupones == 0) {
+
+                        if (data.idGenerado != 0) {
+
+                            Cupones.IdCupones = data.idGenerado;
+                            tabladata.row.add(Cupones).draw(false);
+                            $("#FormModal").modal("hide");
+                            tabladata.ajax.reload(null, false);
+                        } else {
+                            $("#mensajeError").text(data.mensaje);
+                            $("#mensajeError").show();
+                        }
+                    // PRODUCTO EDITAR
+                    } else {
+
+                        if (data.operacionExitosa) {
+                            tabladata.row(filaSeleccionada).data(Cupones).draw(false);
+                            filaSeleccionada = null;
+                            $("#FormModal").modal("hide");
+                            tabladata.ajax.reload(null, false);
+
+                        } else {
+                            $("#mensajeError").text(data.mensaje);
+                            $("#mensajeError").show();
+                        }
+                    }
+                },
+                error: function (error) {
+
+                    $(".modal-body").LoadingOverlay("hide");
+                    $("#mensajeError").text("Error Ajax");
+                    $("#mensajeError").show();
+                },
+                beforeSend: function () {
+                    $(".modal-body").LoadingOverlay("show", {
+                        imageResizeFactor: 2,
+                        text: "Cargando...",
+                        size: 14
+                    });
+                }
+            });
+
+
+        }
+
+        function actualizarCamposDescuento() {
+            var tipo = $("#cbotipo").val();
+
+            $("#txtporcentaje").prop("disabled", false);
+            $("#txtmonto").prop("disabled", true).val(0)
+
+            if (tipo === "PORCENTAJE") {
+                $("#txtporcentaje").prop("disabled", false);
+                $("#txtmonto").prop("disabled", true).val(0); // Limpia monto
+            } else if (tipo === "MONTO") {
+                $("#txtporcentaje").prop("disabled", true).val(0); // Limpia porcentaje
+                $("#txtmonto").prop("disabled", false);
+            }
+        }
+
+        $(document).ready(function () {
+            actualizarCamposDescuento();
+
+            $("#cbotipo").change(function () {
+                actualizarCamposDescuento();
+            });
+        });
+
+
+        //PROMOCIONES
+         var tabladata2;
+         var filaSeleccionada2;
+
+
+         tabladata2 = $("#tabla2").DataTable({
+             responsive: true,
+             ordering: true,
+             "ajax": {
+                 url: '@Url.Action("ListarPromociones", "Mantenedor")',
+                 type: "GET",
+                 datatype: "json"
+             },
+             "columns": [
+                 { "data": "Silueta" },
+                 { "data": "PorcentajeDescuento" },
+                 {
+                     "data": "FechaFin",
+                     "render": function (data) {
+                         var fecha = new Date(parseInt(data.substr(6)));
+                         return fecha.toLocaleDateString("es-AR");
+                     }
+                 },
+                 {
+                     "data": "Activo", "render": function (valor) {
+                         if (valor) {
+                             return '<span class="badge bg-success">Si</span>'
+                         } else {
+                             return '<span class="badge bg-danger">No</span>'
+                         }
+                     }
+                 },
+                 {
+                     "defaultContent": '<button type="button" class="btn btn-primary btn-sm btn-editar"><i class="fas fa-pen"></i></button>' +
+                         '<button type="button" class="btn btn-danger btn-sm ms-2 btn-eliminar"><i class="fas fa-trash"></i></button>',
+                     "orderable": false,
+                     "searchable": false,
+                     "width":"90px"
+                 }
+             ],
+             "language": {
+                 url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-ES.json',
+             }
+         });
+
+        function abrirModal2(json) {
+
+            $("#txtid2").val(0);
+            $("#cbosilueta2").val($("#cbosilueta2 option:first").val());
+            $("#txtporcentaje2").val("");
+            $("#cboactivo2").val(1);
+            $("#txtfechaven2").val("");
+            $("#mensajeError2").hide();
+
+
+
+            if (json != null) {
+                $("#txtid2").val(json.IdPromocion);
+                $("#cbosilueta2").val(json.Silueta);
+                $("#txtporcentaje2").val(json.PorcentajeDescuento);
+                if (json.FechaFin) {
+                    let timestamp = parseInt(json.FechaFin.substr(6)); // extrae número de /Date(...)
+                    let fecha = new Date(timestamp);
+
+                    let yyyy = fecha.getFullYear();
+                    let mm = ("0" + (fecha.getMonth() + 1)).slice(-2); // Mes empieza en 0
+                    let dd = ("0" + fecha.getDate()).slice(-2);
+
+                    let fechaFormateada = `${yyyy}-${mm}-${dd}`; // formato YYYY-MM-DD
+
+                    $("#txtfechaven2").val(fechaFormateada);
+                }
+                $("#cboactivo2").val(json.Activo == true ? 1 : 0);
+            }
+
+            $("#FormModal2").modal("show");
+        }
+
+
+        $("#tabla2 tbody").on("click", ".btn-editar", function () {
+
+            filaSeleccionada2 = $(this).closest("tr");
+
+            var data = tabladata2.row(filaSeleccionada2).data();
+
+            abrirModal2(data)
+        })
+
+        $("#tabla2 tbody").on("click", ".btn-eliminar", function () {
+
+            var promoseleccionado = $(this).closest("tr");
+
+            var data = tabladata2.row(promoseleccionado).data();
+
+            swal({
+                title: "Esta Seguro?",
+                text: "¿Desea eliminar la promocion?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-primary",
+                confirmButtonText: "Si",
+                cancelButtonText: "No",
+                closeOnConfirm: true
+            },
+                function () {
+
+                    jQuery.ajax({
+                        url: '@Url.Action("EliminarPromociones", "Mantenedor")',
+                        type: "POST",
+                        data: JSON.stringify({ id: data.IdPromocion }),
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            if (data.resultado) {
+                                tabladata2.row(promoseleccionado).remove().draw();
+                            } else {
+                                swal("No se pudo eliminar", data.mensaje, "error")
+                            }
+                        },
+                        error: function (error) {
+                            console.log(error)
+                        }
+                    });
+            });
+        })
+
+         function Guardar2() {
+
+             if (!$("#txtfechaven2").val()) {
+                 const hoy = new Date();
+                 hoy.setDate(hoy.getDate() - 1);
+
+                 const ayer = hoy.toISOString().split('T')[0];
+
+                 $("#txtfechaven2").val(ayer);
+             }
+
+             var Promociones = {
+
+                 IdPromocion: $("#txtid2").val(),
+                 Silueta: $("#cbosilueta2").val(),
+                 PorcentajeDescuento: $("#txtporcentaje2").val() || 0,
+                 FechaFin: $("#txtfechaven2").val(),
+                 Activo: $("#cboactivo2").val() == 1 ? true : false,
+
+             }
+
+
+             var request = new FormData();
+             request.append("objeto", JSON.stringify(Promociones))
+
+             jQuery.ajax({
+                 url: '@Url.Action("GuardarPromociones","Mantenedor")',
+                 type: "POST",
+                 data: request,
+                 processData: false,
+                 contentType: false,
+                 success: function (data) {
+
+                     $(".modal-body").LoadingOverlay("hide");
+                     // PRODUCTO NUEVO
+                     if (Promociones.IdPromocion == 0) {
+
+                         if (data.idGenerado != 0) {
+
+                             Promociones.IdPromocion = data.idGenerado;
+                             tabladata2.row.add(Promociones).draw(false);
+                             $("#FormModal2").modal("hide");
+                             tabladata2.ajax.reload(null, false);
+                         } else {
+                             $("#mensajeError2").text(data.mensaje);
+                             $("#mensajeError2").show();
+                         }
+                     // PRODUCTO EDITAR
+                     } else {
+
+                         if (data.operacionExitosa) {
+                             tabladata2.row(filaSeleccionada2).data(Promociones).draw(false);
+                             filaSeleccionada2 = null;
+                             $("#FormModal2").modal("hide");
+                             tabladata2.ajax.reload(null, false);
+
+                         } else {
+                             $("#mensajeError2").text(data.mensaje);
+                             $("#mensajeError2").show();
+                         }
+                     }
+                 },
+                 error: function (error) {
+
+                     $(".modal-body").LoadingOverlay("hide");
+                     $("#mensajeError2").text("Error Ajax");
+                     $("#mensajeError2").show();
+                 },
+                 beforeSend: function () {
+                     $(".modal-body").LoadingOverlay("show", {
+                         imageResizeFactor: 2,
+                         text: "Cargando...",
+                         size: 14
+                     });
+                 }
+             });
+
+
+        }
+
+
+
+    </script>
+}

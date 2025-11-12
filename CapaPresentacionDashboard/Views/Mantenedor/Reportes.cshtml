@@ -1,0 +1,560 @@
+﻿
+@{
+    ViewBag.Title = "Reportes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Mantenimiento</a></li>
+    <li class="breadcrumb-item active">Productos</li>
+</ol>
+
+
+
+<div class="card mt-lg-5">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span>
+            <i class="fas fa-trophy me-1"></i>Productos Más Vendidos
+        </span>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contenidoProductosVendidos" aria-expanded="false" aria-controls="contenidoProductosVendidos">
+            Mostrar/Ocultar
+        </button>
+    </div>
+
+    <div id="contenidoProductosVendidos" class="collapse">
+        <div class="card-body">
+            <div style="width: 800px; height: 500px; margin: 0 auto;">
+                <canvas id="myChart"></canvas>
+            </div>
+            <table id="tabla-vendidos" class="display cell-border" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id Producto</th>
+                        <th>Nombre Producto</th>
+                        <th>Total vendido</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card mt-lg-5">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span>
+            <i class="fas fa-trophy me-1"></i>Productos con más recaudaciones
+        </span>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contenidoProductosRecaudados" aria-expanded="false" aria-controls="contenidoProductosRecaudados">
+            Mostrar/Ocultar
+        </button>
+    </div>
+
+    <div id="contenidoProductosRecaudados" class="collapse">
+        <div class="card-body">
+            <div style="width: 800px; height: 500px; margin: 0 auto;">
+                <canvas id="graficoRecaudacion"></canvas>
+            </div>
+            <table id="tabla-recaudados" class="display cell-border" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id Producto</th>
+                        <th>Nombre Producto</th>
+                        <th>Total Recaudado</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card mt-lg-5">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fas fa-chart-pie me-1"></i>Ventas por Categoría (Silueta)</span>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contenidoTorta" aria-expanded="false" aria-controls="contenidoTorta">
+            Mostrar/Ocultar
+        </button>
+    </div>
+
+    <div id="contenidoTorta" class="collapse">
+        <div class="card-body text-center">
+            <div class="mb-4">
+                <label for="selectAnio">Año:</label>
+                <select id="selectAnio" class="form-select d-inline-block w-auto mx-2"></select>
+
+                <label for="selectMes">Mes:</label>
+                <select id="selectMes" class="form-select d-inline-block w-auto mx-2">
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+
+                <button id="btnGenerar" class="btn btn-primary mx-2">Generar gráfico</button>
+                <span id="mensajeSinDatos" class="text-danger ms-3"></span>
+
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <canvas id="graficoTorta"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card mt-lg-5">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fas fa-chart-line me-1"></i>Ventas Mensuales</span>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="collapse" data-bs-target="#contenidoLinea" aria-expanded="false" aria-controls="contenidoLinea">
+            Mostrar/Ocultar
+        </button>
+    </div>
+
+    <div id="contenidoLinea" class="collapse">
+        <div class="card-body text-center">
+            <div class="mb-3">
+                <label for="selectAnioLinea">Año:</label>
+                <select id="selectAnioLinea" class="form-select d-inline-block w-auto mx-2"></select>
+                <button id="btnGenerarLinea" class="btn btn-primary">Generar gráfico</button>
+                <span id="mensajeSinDatosLinea" class="text-danger ms-3"></span>
+            </div>
+            <canvas id="graficoLinea" style="max-height: 400px;"></canvas>
+        </div>
+    </div>
+</div>
+
+
+
+
+@section scripts{
+    <script>
+
+
+        var tabladata;
+        var tabladatavendidos;
+        var tabladatarecaudados;
+        var filaSeleccionada;
+
+
+        tabladatavendidos = $("#tabla-vendidos").DataTable({
+            responsive: true,
+            ordering: false,
+            searching: false,
+            lengthChange: false,
+            paging: false,
+            pageLength: 10,
+            "ajax": {
+                url: '@Url.Action("ListarTopVendidos", "Mantenedor")',
+                type: "GET",
+                datatype: "json"
+            },
+            "columns": [
+                { "data": "IdProducto" },
+                { "data": "Nombre" },
+                {
+                    "data": "TotalVendido",
+                    "render": function (data, type, row) {
+                        return parseInt(data).toLocaleString('es-AR');
+                    }
+                }
+            ],
+            "language": {
+                url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-ES.json',
+            },
+            "initComplete": function () {
+
+                generarGraficoConDatos(tabladatavendidos);
+            }
+        });
+
+        function generarGraficoConDatos(tabla) {
+
+            var data = tabla.rows().data().toArray();
+
+            var productos = data.map(row => ({
+                nombre: row.Nombre,
+                cantidad: parseInt(row.TotalVendido)
+            }));
+
+
+            productos.sort((a, b) => b.cantidad - a.cantidad);
+
+
+            var labels = productos.map(p => p.nombre);
+            var cantidades = productos.map(p => p.cantidad);
+
+
+            const ctx = document.getElementById('myChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Cantidad Vendida',
+                        data: cantidades,
+                        backgroundColor: 'rgba(51, 178, 255 )',
+                        borderColor: 'rgba(26, 168, 254 )',
+                        borderWidth: 1,
+                        barThickness: 18
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Top Productos Más Vendidos'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+
+
+
+
+
+
+        tabladatarecaudados = $("#tabla-recaudados").DataTable({
+            responsive: true,
+            ordering: false,
+            searching: false,
+            lengthChange: false,
+            paging: false,
+            pageLenght: 10,
+            "ajax": {
+                url: '@Url.Action("ListarTopRecaudados", "Mantenedor")',
+                type: "GET",
+                datatype: "json"
+            },
+            "columns": [
+                { "data": "IdProducto" },
+                { "data": "Nombre" },
+                {
+                    "data": "Recaudacion",
+                    "render": function (data, type, row) {
+                        return '$ ' + parseFloat(data).toLocaleString('es-AR', { minimumFractionDigits: 0 });
+                    }
+                }
+            ],
+            "language": {
+                url: '//cdn.datatables.net/plug-ins/2.1.8/i18n/es-ES.json',
+            },
+            "initComplete": function () {
+                generarGraficoRecaudacion(tabladatarecaudados);
+            }
+        });
+
+        function generarGraficoRecaudacion(tabla) {
+            var data = tabla.rows().data().toArray();
+
+            var productos = data.map(row => ({
+                id: row.IdProducto,
+                nombre: row.Nombre,
+                recaudado: parseFloat(row.Recaudacion)
+            }));
+
+            productos.sort((a, b) => b.recaudado - a.recaudado);
+
+            var labels = productos.map(p => p.id.toString());
+            var montos = productos.map(p => p.recaudado);
+
+            const ctx = document.getElementById('graficoRecaudacion').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Total Recaudado ($)',
+                        data: montos,
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1,
+                        barThickness: 40
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                // Este reemplaza el título por el nombre del producto
+                                title: function (context) {
+                                    const index = context[0].dataIndex;
+                                    return productos[index].nombre;
+                                },
+                                // Este es el valor debajo del título
+                                label: function (context) {
+                                    const index = context.dataIndex;
+                                    return '$ ' + productos[index].recaudado.toLocaleString('es-AR');
+                                }
+                            }
+                        },
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Top Productos por Recaudación'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Id Producto'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function (value) {
+                                    return '$ ' + value.toLocaleString('es-AR');
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+
+        let chartTorta = null;
+
+        $(document).ready(function () {
+            const coloresPersonalizados = [
+                '#0d6efd',
+                '#198754',
+                '#dc3545',
+                '#ffc107',
+                '#0dcaf0',
+                '#6c757d',
+                '#6610f2',
+                '#fd7e14',
+                '#20c997',
+                '#adb5bd'
+            ];
+
+            const anioActual = new Date().getFullYear();
+            for (let i = anioActual; i >= anioActual - 5; i--) {
+                $('#selectAnio').append(`<option value="${i}">${i}</option>`);
+            }
+
+            $('#selectAnio').val(anioActual);
+            $('#selectMes').val(new Date().getMonth() + 1);
+
+            $('#btnGenerar').on('click', function () {
+                const anio = $('#selectAnio').val();
+                const mes = $('#selectMes').val();
+
+                $('#mensajeSinDatos').text('');
+
+                $.ajax({
+                    url: '@Url.Action("VentasCategorias", "Mantenedor")',
+                    type: 'GET',
+                    data: { anio: anio, mes: mes },
+                    success: function (response) {
+                        const data = response.data;
+
+                        if (chartTorta) chartTorta.destroy();
+
+                        if (data.length === 0) {
+                            $('#mensajeSinDatos').text("No hay datos para el mes seleccionado.");
+                            return;
+                        }
+
+                        const categorias = data.map(d => d.Categoria);
+                        const porcentajes = data.map(d => d.Porcentaje);
+                        const cantidades = data.map(d => d.Cantidad);
+                        const colores = categorias.map((_, i) => coloresPersonalizados[i % coloresPersonalizados.length]);
+
+                        const ctx = document.getElementById('graficoTorta').getContext('2d');
+
+                        chartTorta = new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                                labels: categorias,
+                                datasets: [{
+                                    data: porcentajes,
+                                    backgroundColor: colores
+                                }]
+                            },
+                            legend: {
+                                display: true,
+                                labels: {
+                                    font: {
+                                        size: 40,
+                                        weight: 'bold'
+                                    },
+                                }
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    title: {
+                                        display: true,
+                                        text: `Ventas por Categoría (%) - ${anio}/${mes}`,
+                                        font:{
+                                            size: 20,
+                                            weight: 'bold'
+                                        },
+                                        pading: {
+                                            top: 10,
+                                            botom: 20
+                                        }
+                                    },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function (context) {
+                                                const index = context.dataIndex;
+                                                const categoria = context.label;
+                                                const cantidad = cantidades[index];
+                                                const porcentaje = porcentajes[index];
+                                                return [
+                                                    categoria,
+                                                    `Cantidad: ${cantidad}`,
+                                                    `Porcentaje: ${porcentaje.toFixed(2)}%`
+                                                ];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    },
+                    error: function () {
+                        $('#mensajeSinDatos').text("Error al cargar datos del servidor.");
+                    }
+                });
+            });
+
+            $('#btnGenerar').click();
+        });
+
+        let chartLinea = null;
+
+        $(document).ready(function () {
+            const anioActual = new Date().getFullYear();
+            for (let i = anioActual; i >= anioActual - 5; i--) {
+                $('#selectAnioLinea').append(`<option value="${i}">${i}</option>`);
+            }
+
+            $('#selectAnioLinea').val(anioActual);
+
+            $('#btnGenerarLinea').on('click', function () {
+                const anio = $('#selectAnioLinea').val();
+                $('#mensajeSinDatosLinea').text('');
+
+                $.ajax({
+                    url: '@Url.Action("VentasPorMes", "Mantenedor")',
+                    type: 'GET',
+                    data: { anio: anio },
+                    success: function (respuesta) {
+                        const datos = respuesta.data;
+
+                        const meses = Array.from({ length: 12 }, (_, i) => i + 1);
+                        const nombresMeses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+                        const cantidades = meses.map(m => {
+                            const encontrado = datos.find(d => d.Mes === m);
+                            return encontrado ? encontrado.CantidadVentas : 0;
+                        });
+
+                        if (chartLinea) chartLinea.destroy();
+
+                        if (datos.length === 0) {
+                            $('#mensajeSinDatosLinea').text('No hay ventas registradas en este año.');
+                            return;
+                        }
+
+                        const ctx = document.getElementById('graficoLinea').getContext('2d');
+                        chartLinea = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: nombresMeses,
+                                datasets: [{
+                                    label: `Cantidad de ventas en ${anio}`,
+                                    data: cantidades,
+                                    borderColor: '#0d6efd',
+                                    backgroundColor: 'rgba(13, 110, 253, 0.2)',
+                                    fill: true,
+                                    tension: 0.3,
+                                    pointRadius: 4,
+                                    pointHoverRadius: 6
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                    title: {
+                                        display: true,
+                                        text: `Evolución de ventas mensuales (${anio})`,
+                                        font: {
+                                            size: 20,
+                                            weight: 'bold'
+                                        },
+                                        padding: {
+                                            top: 10,
+                                            bottom: 20
+                                        }
+                                    },
+                                    legend: {
+                                        labels: {
+                                            font: {
+                                                size: 14
+                                            }
+                                        }
+                                    },
+                                    tooltip: {
+                                        callbacks: {
+                                            label: function (context) {
+                                                return `Ventas: ${context.parsed.y}`;
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+
+            $('#btnGenerarLinea').click();
+        });
+
+
+
+    </script>
+}
+
+

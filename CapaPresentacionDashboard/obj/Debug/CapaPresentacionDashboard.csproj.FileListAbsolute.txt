@@ -1,0 +1,242 @@
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaPresentacionDashboard.dll.config
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaPresentacionDashboard.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaPresentacionDashboard.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csc.exe
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csc.exe.config
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csc.rsp
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csi.exe
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csi.exe.config
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csi.rsp
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.AppContext.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Console.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.Compression.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Net.Http.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.ValueTuple.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\vbc.exe
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\vbc.exe.config
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\vbc.rsp
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\VBCSCompiler.exe
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Antlr3.Runtime.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Newtonsoft.Json.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Helpers.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Mvc.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Optimization.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Razor.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Razor.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\WebGrease.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Helpers.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Mvc.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Optimization.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Razor.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Razor.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Newtonsoft.Json.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Antlr3.Runtime.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Helpers.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Mvc.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Optimization.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Razor.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.WebPages.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.csproj.AssemblyReference.cache
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.csproj.CoreCompileInputs.cache
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPres.2BB52A92.Up2Date
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaEntidad.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaNegocio.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaDatos.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaEntidad.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaNegocio.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\CapaDatos.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.Parser.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ExcelNumberFormat.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\RBush.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\SixLabors.Fonts.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Buffers.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.IO.Packaging.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Memory.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Numerics.Vectors.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.Parser.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\ExcelNumberFormat.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\RBush.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\SixLabors.Fonts.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Buffers.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.IO.Packaging.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Memory.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Numerics.Vectors.xml
+C:\Users\lolsi\source\repos\Dashboard new era\CapaPresentacionDashboard\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaPresentacionDashboard.dll.config
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaPresentacionDashboard.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaPresentacionDashboard.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csc.exe
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csc.exe.config
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csc.rsp
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csi.exe
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csi.exe.config
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\csi.rsp
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.AppContext.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Console.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.Compression.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Net.Http.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Net.Sockets.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.ValueTuple.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\vbc.exe
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\vbc.exe.config
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\vbc.rsp
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\VBCSCompiler.exe
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Antlr3.Runtime.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaEntidad.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaNegocio.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.Parser.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.Framework.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ExcelNumberFormat.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.Bcl.HashCode.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Newtonsoft.Json.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\RBush.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\SixLabors.Fonts.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Buffers.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.IO.Packaging.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Memory.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Numerics.Vectors.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Helpers.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Mvc.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Optimization.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Razor.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Razor.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\WebGrease.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaDatos.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaEntidad.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaNegocio.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ClosedXML.Parser.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\DocumentFormat.OpenXml.Framework.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\ExcelNumberFormat.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.Bcl.HashCode.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\RBush.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\SixLabors.Fonts.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Buffers.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.IO.Packaging.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Memory.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Numerics.Vectors.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Helpers.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Mvc.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Optimization.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.Razor.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\System.Web.WebPages.Razor.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Newtonsoft.Json.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Antlr3.Runtime.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\CapaDatos.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Helpers.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Mvc.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Optimization.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.Razor.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.WebPages.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.csproj.AssemblyReference.cache
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.csproj.CoreCompileInputs.cache
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPres.2BB52A92.Up2Date
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaPresentacionDashboard\obj\Debug\CapaPresentacionDashboard.pdb

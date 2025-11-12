@@ -1,0 +1,12 @@
+C:\Users\lolsi\source\repos\Dashboard new era\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\lolsi\source\repos\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\lolsi\source\repos\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\lolsi\source\repos\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\lolsi\source\repos\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\lolsi\Downloads\Dashboard new era\Dashboard new era\CapaEntidad\obj\Debug\CapaEntidad.pdb
